@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Site Generators</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Static Site Generators</h1>
+            <nav>
+                <ul>
+                    <a href="index.html"><li>What is it?</li></a>
+                    <a href="why.html"><li>Why use it?</li></a>
+                    <a href="how.html"><li>How to use it</li></a>
+                </ul>
+                <button>Github</button>
+            </nav>
+           
+    </header>
+    
+    <main>
+        <section>
+            <h2>What is a Static Site Generator?</h2>
+            <p>A static site generator (SSG) is a tool that generates a full static HTML website based on raw data and a set of templates. Unlike traditional content management systems (CMS) that dynamically build pages on the server each time a request is made, static site generators create HTML files during the build process, resulting in fast, secure, and easily deployable websites.</p>
+        </section>
+
+        <section>
+            <h2>What do Static Site Generators do?</h2>
+
+            <p>Static site generators (SSGs) automate the process of creating static HTML websites.</p>
+
+                <h3>Key Functions of Static Site Generators:
+                Content Management</h3>
+                
+                    <ul>
+                        <li>SSGs allow you to write your content in various formats like Markdown, JSON, or YAML.</li>
+                    
+                        <li>This content is stored in plain text files, making it easy to manage and version control using tools like Git.</li>
+                    </ul>
+                
+                <h3>Template Rendering</h3>
+                
+                    <ul>
+                        <li>SSGs use templates to define the structure and layout of your site.</li>
+                    
+                        <li>They apply these templates to your content, generating the final HTML files.</li>
+                    
+                        <li>Common templating languages include Liquid, Handlebars, and Pug.</li>
+                    </ul>
+                    
+                <h3>Build Process</h3>
+
+                    <ul>
+                        <li>During the build process, SSGs process your content and templates to generate static HTML files.</li>
+                        
+                        <li>This process might also include optimizing assets (like images and CSS) and generating additional files (like XML sitemaps or RSS feeds).</li>
+                    </ul>
+                
+                <h3>Deployment</h3>
+
+                    <ul>
+                        <li>Once the static files are generated, they can be deployed to any web server or content delivery network (CDN).</li>
+                        
+                        <li>This makes the website fast and highly scalable, as static files are easy to cache and serve.</li>
+                    </ul>
+        </section>
+
+        <img src="images/staticvsdynamic.png">
+
+        <section>
+            <h2>Static VS Dynamic</h2>
+            <p>Static websites serve fixed content stored in separate HTML files, making them faster, more secure, and easier to scale using CDNs. They're ideal for sites with content that doesn't change often, like blogs and portfolios. Dynamic websites generate content on the spot using server-side scripts and databases, allowing for more interactive and frequently updated content. However, they can be slower, more complex to scale, and require robust security measures, making them suitable for e-commerce sites and social media platforms. Both types have their unique benefits depending on the needs of the project.</p>
+        </section>
+    </main>
+    <footer>
+        for educational purposes &copy; 2025
+    </footer>
+</body>
+</html>

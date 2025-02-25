@@ -1,0 +1,22 @@
+body {
+    margin: 1rem;
+    font-family: "Poppins", serif;
+    background-color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "STIX Two Text", serif;
+    color: rgb(56, 100, 110);
+}
+
+section {
+    background-color: rgb(210, 241, 249);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+nav li {
+    list-style: none;
+}
