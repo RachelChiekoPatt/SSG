@@ -11,39 +11,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Static Site Generators</h1>
-            <nav>
-                <ul>
-                    <a href="index.html"><li>What is it?</li></a>
-                    <a href="why.html"><li>Why use it?</li></a>
-                    <a href="how.html"><li>How to use it</li></a>
-                </ul>
-                <button>Github</button>
-            </nav>
-    </header>
+    <body>
+        <header>
+            <h1>Static Site Generators</h1>
 
-    <section>
-        <h2>How it works</h2>
-        <ul>
-            <li><strong>Write Content:</strong> Create content files in Markdown or another supported format.</li>
+            <img src="images/menu-toggle.svg" alt="menu toggle" class="menu-toggle" id="menuToggle">
+
+                <nav id="navMenu">
+                    <ul>
+                        <a href="index.html"><li>What is it?</li></a>
+                        <a href="why.html"><li>Why use it?</li></a>
+                        <a href="how.html"><li>How to use it</li></a>
+                    </ul>
+
+                    <img src="images/github.svg" alt="github icon" class="github">
+                
+                </nav>
             
-            <li><strong>Define Templates:</strong> Design the layout and structure of your site using templates.</li>
-            
-            <li><strong>Build Site:</strong> Run the SSG's build command, which processes the content and templates to generate static HTML files.</li>
-            
-            <li><strong>Deploy Site:</strong> Upload the generated HTML files to a web server or CDN.</li>
-        </ul>
-    </section>
+        </header>
+        <main>
+                <section>
+                    <h2>How it works</h2>
+                    <ul>
+                        <li><strong>Write Content:</strong> Create content files in Markdown or another supported format.</li>
+                        
+                        <li><strong>Define Templates:</strong> Design the layout and structure of your site using templates.</li>
+                        
+                        <li><strong>Build Site:</strong> Run the SSG's build command, which processes the content and templates to generate static HTML files.</li>
+                        
+                        <li><strong>Deploy Site:</strong> Upload the generated HTML files to a web server or CDN.</li>
+                    </ul>
 
-        <h2>CODE ALONG</h2>
-        <p>Figure this out later</p>
+                </section>
 
-    <section>
+                <section>
+                    <h2>CODE ALONG</h2>
+                    <p>Figure this out later</p>
+                </section>
 
-    <footer>
-        for educational purposes &copy; 2025
-    </footer>
-</body>
+        </main>
+
+        <footer>
+            for educational purposes &copy; 2025
+        </footer>
+
+    </body>
+    <script src="javascript/base.js"></script>
 </html>

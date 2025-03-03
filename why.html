@@ -15,45 +15,54 @@
 <body>
     <header>
         <h1>Static Site Generators</h1>
-            <nav>
+
+        <img src="images/menu-toggle.svg" alt="menu toggle" class="menu-toggle" id="menuToggle">
+
+            <nav id="navMenu">
                 <ul>
                     <a href="index.html"><li>What is it?</li></a>
                     <a href="why.html"><li>Why use it?</li></a>
                     <a href="how.html"><li>How to use it</li></a>
                 </ul>
-                <button>Github</button>
+
+                <img src="images/github.svg" alt="github icon" class="github">
+            
             </nav>
+           
     </header>
 
-    <section>
-        <h2>Why use it?</h2>
+    <main>
 
-            <h3>Benefits of Using SSGs</h3>
+            <section>
+                <h2>Why use it?</h2>
 
+                    <h3>Benefits of Using SSGs</h3>
+
+                        <ul>
+                            <li><strong>Performance:</strong> Static sites load quickly because they don't require server-side processing.</li>
+                            
+                            <li><strong>Security:</strong> With no dynamic content or databases, the attack surface is reduced.</li>
+                            
+                            <li><strong>Scalability:</strong> Static sites can handle high traffic effortlessly with CDN support.</li>
+                            
+                            <li><strong>Simplicity:</strong> Content is managed through simple text files, making it easy to update and version control.</li>
+                        </ul>
+
+            </section>
+
+            <section>
+                <h2>Where would it be used?</h2>
+                <p>Static site generators are ideal for various use cases, such as personal or company blogs, where the content remains consistent and loads quickly. They are also great for creating documentation sites, providing clear and organized static documentation that is easy to navigate. Additionally, static sites are perfect for showcasing work in portfolios, ensuring fast-loading static pages that highlight the content effectively.</p>
+                <h3>Some popular SSGs</h3>
                 <ul>
-                    <li><strong>Performance:</strong> Static sites load quickly because they don't require server-side processing.</li>
-                    
-                    <li><strong>Security:</strong> With no dynamic content or databases, the attack surface is reduced.</li>
-                    
-                    <li><strong>Scalability:</strong> Static sites can handle high traffic effortlessly with CDN support.</li>
-                    
-                    <li><strong>Simplicity:</strong> Content is managed through simple text files, making it easy to update and version control.</li>
+                    <li><strong>Hugo:</strong> Written in Go, known for its speed.</li>
+                    <li><strong>Gatsby:</strong> React-based SSG that leverages GraphQL.</li>
+                    <li><strong>Eleventy:</strong> A flexible JavaScript-based SSG supporting multiple templating languages.</li>
                 </ul>
+            </section>
 
-    </section>
-
-    <section>
-        <h2>Where would it be used?</h2>
-        <p>Static site generators are ideal for various use cases, such as personal or company blogs, where the content remains consistent and loads quickly. They are also great for creating documentation sites, providing clear and organized static documentation that is easy to navigate. Additionally, static sites are perfect for showcasing work in portfolios, ensuring fast-loading static pages that highlight the content effectively.</p>
-        <h3>Some popular SSGs</h3>
-        <ul>
-            <li><strong>Hugo:</strong> Written in Go, known for its speed.</li>
-            <li><strong>Gatsby:</strong> React-based SSG that leverages GraphQL.</li>
-            <li><strong>Eleventy:</strong> A flexible JavaScript-based SSG supporting multiple templating languages.</li>
-        </ul>
-    </section>
-
-    <img src="images/static-site-examples.jpg">
+            <img src="images/static-site-examples.jpg">
+    </main>
 
     <footer>
 
@@ -61,4 +70,5 @@
         
     </footer>
 </body>
+<script src="javascript/base.js"></script>
 </html>
