@@ -1,10 +1,34 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+    - Normalize
+    - Box sizing
+    - Media width
+# Base
+    - Typography
+    - Elements
+    - Links
+# Layouts
+# Components
+    - Header
+    - Main
+    - Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
 body {
     font-family: "Poppins", serif;
     background-color: rgb(255, 255, 255);
-}
-
-main {
-    margin-top: 4.5rem;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1,
@@ -15,70 +39,35 @@ h3 {
 }
 
 h1 {
-    margin: .5rem;
+    margin: 0.5rem;
     font-size: 20px;
-    
 }
 
+/* Elements
+--------------------------------------------- */
 section {
     background-color: rgb(210, 241, 249);
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem auto;
     border-radius: 10px;
+    max-width: 1200px;
 }
 
-
-/*---------------------------------------------------------------------------------*/
-/* Navigation Bar*/
-/*---------------------------------------------------------------------------------*/
-header {
-    background-color: white;
-    padding: .5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.menu-toggle {
-    max-width: 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    display: block;
-  
-}
-
-nav ul {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav li {
-    padding: .5rem;
-    text-align: center;
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
-nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.github {
-    padding: .5rem;
-    max-width: 50px;
-}
-
-
-/* Links */
-
-
+/* Links
+--------------------------------------------- */
 a {
     text-decoration: none;
     color: inherit;
@@ -87,21 +76,148 @@ a {
 a:visited {
     color: black;
 }
-a:hover,
-a:focus,
-a:active {
-    display: block;
-    width: 100vw;
-    text-align: center;
-    color: white;
-    background-color: rgb(56, 100, 110);
+
+@media screen and (min-width: 769px) {
+    .desktop-nav ul li:hover {
+        color: white;
+        background-color: rgb(56, 100, 110);
+    }
 }
 
-/* Footer */
+@media screen and (max-width: 768px) {
+    a:hover,
+    a:focus,
+    a:active {
+        display: block;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        background-color: rgb(56, 100, 110);
+    }
+    body {
+        padding: 0 5vw;
+    }
+}
 
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+main {
+    margin-top: 4.5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+header {
+    background-color: rgb(164, 191, 231);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.desktop-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.desktop-nav li {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(164, 191, 231);
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.mobile-nav li {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none;
+    margin-right: 0;
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-left: 2rem;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 30px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .menu-toggle.active + .mobile-nav {
+        display: flex;
+    }
+}
+
+/* Main
+--------------------------------------------- */
+.github {
+    padding: 0.5rem;
+    max-width: 50px;
+}
+
+/* Footer
+--------------------------------------------- */
 footer {
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 1rem;
+    margin-top: auto;
 }
