@@ -57,8 +57,86 @@
                 </section>
 
                 <section>
-                    <h2>CODE ALONG</h2>
-                    <p>Figure this out later</p>
+                            <h2>Code Along</h2>
+
+                            <p>Static site generators are different in how they work. Some, like Jekyll and Hugo, are fast and simple for basic sites, while others, like Gatsby and Next.js, are more advanced for handling dynamic content or integrating with CMS systems. They also use different languages (e.g., Ruby, Go, or React) and offer varying levels of templates, plugins, and community support. The best choice depends on whether you need speed, ease of use, or advanced features for your project.</p>
+
+                            <h3>What all SSGs have in common</h3>
+
+                            <ul>
+                                <li>Markdown files for Content</li>
+                                <li>Templates abd Layouts</li>
+                                <li>Configuration</li>
+                                <li>Build Process</li>
+                            </ul>
+
+                        <section>
+                            <h3>Set Up the SSG</h3>
+                            <p>For this code along we decided to try Hugo. Firstly, let's set up Hugo on VS Code!</p>
+
+
+                            <img src="images/hugo-version.png">
+
+                            <p>To set up Hugo, we need to install Hugo onto VS Code. To do this open the terminal and type in <strong>brew install hugo</strong>. If you already have it installed or are unsure if you do, type in <strong>hugo version</strong> to see if you do and what version you have installed.</p>
+
+
+                            <img src="images/new-site.png">
+
+                            <p>Now that Hugo installed, we need to set up a new site. In the terminal type in <strong>hugo new site your-site-name</strong>.</p>
+
+
+                            <img src="images/git-init.png">
+
+                            <p>Next switch to the directory of your new site by typing in <strong>cd your-site-name</strong>. Then type in <strong>git init</strong> to initialize a new Git repository in your projects's directory.</p>
+
+                        </section>
+
+                        
+                            <h2>Themes</h2>
+
+                            <p>Note that themes in static site generators like Hugo are often set up differently, depending on how the theme developer structured it.</p>
+
+                            <h3>Some ways themes can vary</h3>
+
+                            <ul>
+                                <li>File and Folder Organization</li>
+                                <li>Customization Options</li>
+                                <li>Ease of Use</li>
+                                <li>Features</li>
+                            </ul>
+
+                        <section>
+
+                            <h3>Set Up a Theme</h3>
+
+                            <img src="images/choose-theme.png">
+
+                            <p>Every SSG will have different themes to browse through. Once you pick a theme you like you can apply it to your new site.</p>
+
+                            <p>There are multiple ways to apply a theme in Hugo (and other SSgs). You can clone the theme repository using <em>git clone</em>, <em>manually download and extract it</em>, or use <em>Git submodules</em> for better version control. Another method is copying the theme's files (like layouts and static assets) directly into your site for full customization. Finally, advanced users can use theme components for modular setups. Each method depends on your need for updates, control, and workflow simplicity.</p>
+
+                            <img src="images/theme-hugotoml.png">
+
+                            <p>Once you apply the theme to your folder, above I used <strong>git clone url</strong> in the terminal, now you need to declare the theme so that Hugo knows to look in the <strong>themes/ </strong>directory for the theme files.</p>
+
+                            <p>In the example above I declared the theme in hugo.toml, and although this worked, it is better practice to declare the theme in config.toml since it is the primary configuration file for your Hugo site.</p>
+                        </section>
+
+                        <h2>Content</h2>
+                        <p>Finally, we get to add content and customize.</p>
+
+                        <section>
+                            <h3>Markdown files</h3>
+
+                            <img src="images/firstpage-modify.png">
+
+                            <p>The <strong>content</strong> folder is where you will have all of your markdown files. Like HTML, you need an index file as the landing page. In your <strong>_index.md</strong> file you can now start to write out your content! Markdown has it's own writing and formatting syntax. Here is a <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" class="gitlink" target="_blank">Github doc</a> that lists everything you would need to start.</p>
+
+                            <img src="images/css.png">
+
+                            <p>Now you're free to create as many pages as you'd like! You can also go into the CSS and Javascript files too to customize them if you'd like.</p>
+                        </section>           
+
                 </section>
 
         </main>

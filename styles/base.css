@@ -212,6 +212,11 @@ header {
     max-width: 50px;
 }
 
+a.gitlink {
+    color: rgb(56, 100, 110);
+    font-weight: 700;
+    text-decoration: underline;
+}
 /* Footer
 --------------------------------------------- */
 footer {
